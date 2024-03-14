@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rules - Oska TV</title>
+    <link rel="shortcut icon" href="img/oskatv.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="head-bar">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light py-3 position-sticky top-0 z-999"
+      >
+        <div class="container">
+          <a href="../" class="text-dark text-decoration-none"
+            ><img src="../img/oskatv.webp" width="75px" alt="Logo Oska TV" />
+            <span class="h5 fw-semibold ms-2">Oska TV</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-dark my-2" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="navitem px-4 h5">
+                <a href="../" class="nav-link"
+                  ><i class="bi bi-house-fill"></i> Home</a
+                >
+              </li>
+              <li class="navitem px-4 h5">
+                <a href="../teams" class="nav-link"
+                  ><i class="bi bi-people-fill"></i> Teams</a
+                >
+              </li>
+              <li class="navitem px-4 h5">
+                <a href="../schedule/" class="nav-link"
+                  ><i class="bi bi-calendar-fill"></i> Schedule</a
+                >
+              </li>
+              <li class="navitem px-4 h5">
+                <a href="../rulesbook" class="nav-link"
+                  ><i class="bi bi-book-fill"></i> Rules Book</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="d-flex my-2">
+        <a href="../" class="btn btn-warning rounded-5 me-1">Home</a>
+        <i class="bi bi-chevron-right mx-1 mt-2"></i>
+        <a href="#" class="btn btn-warning rounded-5 mx-1">Rules book</a>
+      </div>
+      <article class="bg-warning my-3 p-3 rounded-5">
+        <h2 class="text-decoration-underline text-center fw-semibold mt-3 mb-1">
+          <i class="bi bi-book-fill"></i> Rules Book
+          <i class="bi bi-book-fill"></i>
+        </h2>
+        <div class="p-3">
+          <span class="p"
+            ><span class="h3">1. </span>ក្រុមប្រកួតទាំងអស់មាន១២៨ក្រុម
+            ដែលយើងត្រូវជម្រុះ3ជុំ ដើម្បីឡើងទៅវគ្គ១៦ក្រុម។</span
+          ><br />
+          <span class="p-1"
+            ><span class="h3">2. </span> ការប្រកួតជាទម្រង់Single Elimination
+            ចាញ់ធ្លាក់ ជាប់ឡើង ដែលយើងលេង Best of 1ទាំង៣ជុំ</span
+          ><br />
+          <span class="p-1"
+            ><span class="h3">3. </span
+            >គ្រប់សមាជិកក្នុងក្រុមទាំងអស់មានសិទ្ធប្រកួត
+            ដរ៉ាបណាពួកគាត់នៅក្នុងSquad</span
+          ><br />
+          <span class="p-1"
+            ><span class="h3">4. </span>ក្រុមទាំងអស់ត្រូវគោរពម៉ោងប្រកួត
+            បើយឺតលើសពី១០នាទីត្រូវធ្លាក់</span
+          ><br />
+          <span class="p-1"
+            ><span class="h3">5. </span>ក្រុមការងារយើងនឹងផ្តល់Tournament
+            Roomអោយនៅជុំទី១
+            ជាមួយនឹងកាលវិភាគប្រកួតជូនតែបើក្រុមមិនអាចប្រកួតម៉ោងដែលយើងបានកំណត់បាន
+            ក្រុមទាំងអស់អាចប្រើRoomដោយខ្លួនឯងបាន។
+            ក្នុងករណីដែលមិនអាចប្រកួតម៉ោងដែលយើងបានកំណត់អោយទេ
+            តំណាងក្រុមត្រូវទាក់ទងទៅModerator
+            យ៉ាងតិចអោយបានមួយថ្ងៃមុនថ្ងៃប្រកួតដើម្បីសុំContactក្រុមម្ខាងទៀតដើម្បីប្រកួតដោយខ្លួនឯង។</span
+          ><br />
+          <span class="p-1"
+            ><span class="h3">6. </span>ត្រូវផ្ញើរលទ្ធផលប្រកួតចូល Group
+            អោយបានមុនថ្ងៃកំណត់</span
+          ><br />
+        </div>
+      </article>
+    </section>
+    <button
+      id="toggleButton"
+      class="btn btn-lg btn-secondary rounded-5"
+      onclick="toggleLink()"
+    >
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <div id="hiddenLink">
+      <a
+        href="https://facebook.com/OskaTv"
+        class="btn btn-lg btn-primary my-1"
+        target="_blank"
+      >
+        <i class="bi bi-facebook"></i> Facebook
+      </a>
+      <br />
+      <a
+        href="https://t.me/OskaTv"
+        class="btn btn-lg btn-info my-1"
+        target="_blank"
+      >
+        <i class="bi bi-telegram"></i> Telegram
+      </a>
+      <br />
+      <a
+        href="https://tiktok.com/@oska.tv"
+        class="btn btn-lg btn-dark my-1"
+        target="_blank"
+      >
+        <i class="bi bi-tiktok"></i> TikTok
+      </a>
+    </div>
+    <section class="row text-center mt-4 mb-3">
+      <div class="col-12">
+        <span class="h4 pb-2">ORGANIZED BY:</span> <br />
+        <a href="https://www.facebook.com/OskaTV" target="_blank" class="mt-3">
+          <img
+            src="../img/oskatv.webp"
+            alt="Oska logo"
+            width="100px"
+            class="me-3"
+          />
+        </a>
+      </div>
+    </section>
+    <footer class="text-center container my-5">
+      <div class="container m-3">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All right reserved by Oska TV. Code and Design by
+          <a
+            class="text-decoration-none"
+            target="_blank"
+            href="https://t.me/lyheang1"
+            >Lyheang</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
