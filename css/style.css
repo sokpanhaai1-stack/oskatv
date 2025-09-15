@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --color-light: rgb(248, 248, 255);
-  --color-dark: rgb(33, 37, 41);
+  --color-light: rgb(33, 37, 41);
+  --color-dark: rgb(248, 248, 255);
   --color-muted: rgba(248, 248, 255, 0.75);
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --border-color: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -14,13 +19,150 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("img/bg.webp");
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.navbar-light {
+  background-color: var(--bg-secondary) !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-primary) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+  color: var(--text-primary) !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: var(--border-color);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.text-dark {
+  color: var(--text-primary) !important;
+}
+
+.bg-light {
+  background-color: var(--bg-secondary) !important;
+}
+
+.bg-warning {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+.bg-dark {
+  background-color: var(--bg-primary) !important;
+}
+
+.table-light {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.table-light th,
+.table-light td {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.table-light thead th {
+  background-color: #3d3d3d;
+  color: var(--text-primary);
+}
+
+.form-control {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.form-control:focus {
+  background-color: var(--bg-secondary);
+  border-color: #ffc107;
+  color: var(--text-primary);
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.form-control::placeholder {
+  color: var(--text-secondary);
+}
+
+.input-group-text {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.btn-outline-info {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-outline-info:hover {
+  background-color: #0dcaf0;
+  color: #000;
+}
+
+.btn-outline-dark {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.list-group-dark {
+  background-color: var(--bg-primary) !important;
+}
+
+.list-group-item-dark {
+  background-color: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.badge {
+  color: #000 !important;
 }
 
 header.head-bar {
   position: sticky;
   top: 0;
   border-bottom: 1px solid rgba(255, 212, 0, 0.5);
+  background-color: var(--bg-secondary);
 }
 
 .z-999 {
@@ -42,10 +184,11 @@ header.head-bar {
   left: 20px;
   padding: 10px;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-secondary);
   border-radius: 20px;
   padding: 10px;
   transition: opacity 1s, transform 1s;
+  border: 1px solid var(--border-color);
 }
 
 #hiddenLink.show {
@@ -70,4 +213,29 @@ header.head-bar {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 15px;
+}
+
+footer {
+  color: var(--text-secondary);
+}
+
+footer a {
+  color: #ffc107 !important;
+}
+
+.container p {
+  color: var(--text-primary);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+.text-center {
+  color: var(--text-primary);
+}
+
+.text-decoration-underline {
+  color: var(--text-primary);
 }
